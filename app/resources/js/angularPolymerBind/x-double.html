@@ -1,11 +1,11 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
 <dom-module name="x-double">
-  <template>{{in}}, {{out}}</template>
+  <template>{{in}},
+    {{out}}</template>
   <script>
     Polymer({
       is: "x-double",
-      properties: {
-        in: {
+      properties: { in: {
           type: Number,
           value: 0,
           observer: 'inChanged',
@@ -16,11 +16,11 @@
           reflectToAttribute: true
         }
       },
-      ready: function(){
+      ready: function() {
         this.inChanged();
       },
-      inChanged: function(){
-        this.out = parseInt(this.in) * 2;
+      inChanged: function() {
+        this.out = parseInt(this. in) * 2;
       }
     });
   </script>

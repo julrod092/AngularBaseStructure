@@ -32,16 +32,17 @@ module.exports = function(grunt) {
         options: {
           keepAlive: false
         }
+      },
+      continuous: {
+        options: {
+          keepAlive: true
+        }
       }
     },
 
     watch: {
       options: {
         livereload: true
-      },
-      protractor: {
-        files: ['app/scripts/**/*.js', 'test/e2e/*.js'],
-        tasks: ['protractor:continuous']
       },
       files: ['app/**'],
       tasks: []
