@@ -1,0 +1,30 @@
+{
+  "name": "ng-cotizador",
+  "dependencies": {
+    "angular": "1.5.0",
+    "angular-route": "1.5.0",
+    "angular-resource": "1.5.0",
+    "angular-material": "^1.0.5",
+    "jquery": "^2.2.1",
+    "angular-sanitize": "^1.5.0",
+    "polymer": "Polymer/polymer#^1.1.0",
+    "paper-elements": "polymerelements/paper-elements#~1.0.5",
+    "iron-elements": "PolymerElements/iron-elements#~1.0.5"
+  },
+  "authors": [
+    "Jorge Aguilar <jorge.aguilar@ceiba.com.co>"
+  ],
+  "description": "Cotizador AngularJS",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}

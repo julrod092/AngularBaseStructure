@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cotizadorApp">
+
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+  <link rel="stylesheet" href="bower_components/prism/themes/prism.css" />
+  <!-- endbower -->
+
+  <head>
+    <meta charset="UTF-8">
+    <title>My Cool Title</title>
+
+  </head>
+
+  <body ng-app="starterApp" layout="column">
+
+    <!-- Container #1 (see wireframe) -->
+    <md-toolbar layout="row">
+      <h1>Angular Material - Starter App</h1>
+    </md-toolbar>
+
+    <!-- Container #2 -->
+    <div flex layout="row">
+
+      <!-- Container #3 -->
+      <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2"></md-sidenav>
+
+      <!-- Container #4 -->
+      <md-content flex id="content" ng-view class="view-frame" style="padding: 20px;"></md-content>
+
+    </div>
+
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <script src="bower_components/web-animations-js/web-animations.min.js"></script>
+    <script src="bower_components/promise-polyfill/Promise.js"></script>
+    <script src="bower_components/hydrolysis/hydrolysis.js"></script>
+    <script src="bower_components/marked/lib/marked.js"></script>
+    <script src="bower_components/prism/prism.js"></script>
+    <!-- endbower -->
+
+    <script src="js/lib/angular_bind_polymer.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+  </body>
+</html>

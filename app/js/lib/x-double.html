@@ -1,0 +1,27 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<dom-module name="x-double">
+  <template>{{in}}, {{out}}</template>
+  <script>
+    Polymer({
+      is: "x-double",
+      properties: {
+        in: {
+          type: Number,
+          value: 0,
+          observer: 'inChanged',
+          notify: true
+        },
+        out: {
+          type: Number,
+          reflectToAttribute: true
+        }
+      },
+      ready: function(){
+        this.inChanged();
+      },
+      inChanged: function(){
+        this.out = parseInt(this.in) * 2;
+      }
+    });
+  </script>
+</dom-module>

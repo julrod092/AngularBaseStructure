@@ -1,0 +1,29 @@
+{
+  "name": "projectName",
+  "version": "0.0.1",
+  "author": "Remi goyard",
+  "license": "MIT",
+  "description": "The Cool Description",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "protractor": "^2.5.1",
+    "grunt-bower-install": "^1.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-express": "^1.4.1",
+    "grunt-protractor-coverage": "^0.2.15",
+    "grunt-protractor-runner": "^0.2.4",
+    "grunt-open": "~0.2.3"
+  },
+  "scripts": {
+    "postinstall": "bower install && webdriver-manager update && ./node_modules/protractor/bin/webdriver-manager update",
+    "start": "grunt",
+    "test": "npm install && grunt test"
+  }
+}
